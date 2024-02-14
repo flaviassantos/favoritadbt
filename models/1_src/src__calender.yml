@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: src__calender
+    description: 'Base structure for calender dimention'

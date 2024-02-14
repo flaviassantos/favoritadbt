@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: mart__dim_event
+    description: ''

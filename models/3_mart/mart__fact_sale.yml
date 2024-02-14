@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: mart__fact_sale
+    description: Sales for a product family at a particular store at a given date that were completed.
+    columns:
+      - name: store_id
+        description: Identifies the store at which the products are sold.

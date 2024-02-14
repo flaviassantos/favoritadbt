@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: sem__sale
+    description: Sales for a product family at a particular store at a given date that were completed.

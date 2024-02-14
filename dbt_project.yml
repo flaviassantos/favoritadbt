@@ -1,0 +1,27 @@
+name: 'favoritadbt'
+version: '1.0.0'
+config-version: 2
+
+profile: 'favoritadbt'
+
+model-paths: ["sources", "models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+docs-paths: ["docs"]
+target-path: "target"  # directory which will store compiled SQL files
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+models:
+  favoritadbt:
+    +materialized: table
+    +post-hook:
+      - "GRANT SELECT ON {{ this }} TO ROLE REPORTER"
+# Config indicated by + and applies to all files under models/favorita/

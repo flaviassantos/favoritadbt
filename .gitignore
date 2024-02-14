@@ -1,0 +1,13 @@
+*.zip
+.env
+*tmp
+.DS_Store
+*/airbyte
+
+/venv_favoritadbt
+
+target/
+dbt_packages/
+logs/
+
+seeds

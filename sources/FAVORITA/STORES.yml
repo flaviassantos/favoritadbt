@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: FAVORITA
+    database: FAVORITA
+    schema: DEV
+    tables:
+      - name: STORES

@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: mart__dim_store
+    description: ''
+    columns:
+      - name: store_id
+        description: Identifies the store at which the products are sold.

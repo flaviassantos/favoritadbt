@@ -1,0 +1,11 @@
+version: 2
+
+macros:
+  - name: unique_business_key
+    description: |
+      Creates a unique key taking a list of business fields that make up a
+      unique row as input, merge and hash the result.
+    arguments:
+      - name: business_key_fields
+        type: nvarchar
+        description: List with columns - ['column1', 'column2']

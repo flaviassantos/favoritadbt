@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: src__sale_open
+    description: Open sales for a product family at a particular store at a given date.
+    columns:
+      - name: store_id
+        description: Identifies the store at which the products are sold.

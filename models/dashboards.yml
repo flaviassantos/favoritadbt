@@ -1,0 +1,20 @@
+version: 2
+
+exposures:
+  - name: Favorita_Sales
+    label: Favorita - Sales
+    type: dashboard
+    maturity: low
+    url: https://7a869dfa.us1a.app.preset.io/superset/dashboard/p/RqOgJeW472Z/
+    description: Executive Dashboard about sales of Favorita stores in Ecuador
+
+
+    depends_on:
+      - ref('sem__store')
+      - ref('sem__calender')
+      - ref('sem__event')
+      - ref('sem__sale')
+
+    owner:
+      name: Flavia Santos
+      email: fss@fss.com
