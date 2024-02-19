@@ -11,3 +11,4 @@ dbt_packages/
 logs/
 
 seeds
+*DUEDATE.yml
